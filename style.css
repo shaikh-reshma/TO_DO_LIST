@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    box-sizing:border-box;
+}
+body {
+    height: 100vh; /*Makes the body take the full height of the screen.*/
+    display: flex;/*Uses Flexbox to center the To-Do List in the middle.*/
+    justify-content: center;/*Centers the content horizontally.*/
+    align-items: center;/*Centers the content vertically.*/
+    background-size: cover;/*Ensures the background image covers the full screen.*/
+    background-position: center;/*Centers the background image properly.*/
+    transition: background 2s ease-in-out;/*Smooth transition when the background image changes.*/
+    margin: 0;/*Removes default margin to prevent unwanted white spaces.*/
+    font-family: Arial, sans-serif;/* font to Arial for a clean look.*/
+}
+
+.todo-app {
+    background: rgba(255, 255, 255, 0.8);/*Adds a semi-transparent white background for better readability.*/
+    padding: 20px;/*Creates space inside the box.*/
+    border-radius: 10px;/*Rounds the corners for a smooth UI.*/
+    text-align: center;/*Centers the content inside the box.*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);/*Adds a shadow effect for a 3D look.*/
+}
+
+h2 {
+    display: flex;/*Uses Flexbox to align the heading and the image.*/
+    justify-content: center;
+    align-items: center;
+    gap: 10px;/*Adds space between the text and the image.*/
+}
+
+h2 img {
+    width: 30px;/*Makes the notes image small and visually aligned with the heading.*/
+}
+
+.row {
+    display: flex;/*Places the input box and button side by side.*/
+    gap: 10px;/*Creates space between the input box and button.*/
+    margin-top: 10px;/*Adds space above the row for better layout.*/
+}
+
+input {
+    flex: 1;/*Makes the input box take up most of the space.*/
+    padding: 10px;/*Adds space inside for a better typing experience.*/
+    border: 1px solid #ccc;/*Adds a thin gray border.*/
+    border-radius: 5px;/*Rounds the corners slightly.*/
+}
+
+button {
+    background-color: #0f41ad;/*Adds a green background.*/
+    color: white;/*Sets the text color to white.*/
+    border: none;/*Removes the default button border.*/
+    padding: 10px 15px;/*Adds space inside the button.*/
+    border-radius: 5px;/*Rounds the button corners.*/
+    cursor: pointer;/*Changes the cursor to a hand icon on hover.*/
+}
+
+button:hover {
+    background-color: #15469b;/*Makes the button slightly darker when hovered.*/
+}
+
+ul {
+    list-style: none;/*Removes default bullet points from the list.*/
+    padding: 0;/**/
+    margin-top: 20px;/*Adds space above the list.*/
+}
+
+li {
+    background: white;/*Makes each task white for contrast.*/
+    padding: 10px;/*Adds space inside each task.*/
+    margin: 5px 0;/*Adds space between tasks.*/
+    display: flex;/*Ensures the task text and delete button are aligned properly.THIS IS FOR ALIGNMENT*/
+    justify-content: space-between;/*Spreads the text and delete button evenly.*/
+    align-items: center;/*Aligns text and button properly   */
+    border-radius: 5px;/*Rounds the task corners.*/
+    cursor: pointer;/*Allows users to click on tasks.*/
+}
+
+li.checked {
+    text-decoration: line-through;/*Strikes through completed tasks.*/
+    color: gray;/*Changes the text color to gray.*/
+}
+
+i {
+    cursor: pointer;/*Makes the trash icon clickable.*/
+    color: gray;/*Sets the default color of the delete icon.*/
+    margin-left: 10px;/*Adds space between the text and the trash icon. */
+    
+ }
